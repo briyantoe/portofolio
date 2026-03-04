@@ -1,253 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bayu Riyanto</title>
 
-<title>Bayu Riyanto | DevOps Engineer</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<style>
-
-body{
-background:#020617;
-color:white;
-font-family:system-ui;
-}
-
-.grid-bg{
-background-image:
-linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-background-size:40px 40px;
-}
-
-.glow{
-color:#38bdf8;
-text-shadow:0 0 10px rgba(56,189,248,0.7);
-}
-
-.card{
-background:#0f172a;
-border:1px solid rgba(255,255,255,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="grid-bg">
+<body>
 
-<!-- HERO -->
+<header>
 
-<section class="min-h-screen flex items-center justify-center text-center px-6">
+<strong>Bayu Riyanto</strong>
 
-<div>
+<nav>
+<a href="index.html">Beranda</a>
+<a href="tentang.html">Tentang</a>
+<a href="portofolio.html">Portofolio</a>
+<a href="mengajar.html">Mengajar</a>
+<a href="kontak.html">Kontak</a>
+</nav>
 
-<h1 class="text-6xl font-bold mb-6 glow">
-Bayu Riyanto
-</h1>
+<button id="darkToggle">Mode</button>
 
-<p class="text-xl text-gray-300 mb-4">
+</header>
+
+<section class="hero">
+
+<h1>Bayu Riyanto</h1>
+
+<p>
 DevOps Engineer • Infrastructure Architect • Educator
 </p>
 
-<p class="max-w-xl mx-auto text-gray-400 mb-10">
-Building reliable server infrastructure, virtualization environments,
-and scalable digital learning platforms for modern education.
-</p>
-
-<div class="space-x-4">
-
-<a href="#projects"
-class="bg-sky-500 px-8 py-4 rounded-lg hover:bg-sky-600">
-View Projects
-</a>
-
-<a href="#contact"
-class="border border-gray-400 px-8 py-4 rounded-lg hover:bg-gray-800">
-Contact
-</a>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- ABOUT -->
-
-<section class="py-24 px-6">
-
-<div class="max-w-4xl mx-auto text-center">
-
-<h2 class="text-4xl font-bold mb-6">
-About Me
-</h2>
-
-<p class="text-gray-400 leading-relaxed">
-I am an infrastructure engineer and educator focused on building
-stable digital environments for education. My work includes
-virtualization platforms, Linux server administration,
-network infrastructure, and scalable learning systems
-supporting thousands of users.
-</p>
-
-</div>
-
-</section>
-
-<!-- TECH STACK -->
-
-<section class="py-24 bg-slate-900 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold text-center mb-16">
-Tech Stack
-</h2>
-
-<div class="grid md:grid-cols-4 gap-8 text-center">
-
-<div class="card p-6 rounded-xl">
-Linux Server
-</div>
-
-<div class="card p-6 rounded-xl">
-Proxmox Virtualization
-</div>
-
-<div class="card p-6 rounded-xl">
-Nginx Web Server
-</div>
-
-<div class="card p-6 rounded-xl">
-Cloudflare
-</div>
-
-<div class="card p-6 rounded-xl">
-Moodle LMS
-</div>
-
-<div class="card p-6 rounded-xl">
-MySQL Database
-</div>
-
-<div class="card p-6 rounded-xl">
-Docker
-</div>
-
-<div class="card p-6 rounded-xl">
-Network Infrastructure
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects" class="py-24 px-6">
-
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold text-center mb-16">
-Infrastructure Projects
-</h2>
-
-<div class="grid md:grid-cols-2 gap-10">
-
-<div class="card p-8 rounded-xl">
-
-<h3 class="text-2xl font-semibold mb-4">
-School Infrastructure System
-</h3>
-
-<p class="text-gray-400">
-Virtualized infrastructure supporting 1500+ students and teachers,
-running Moodle LMS, CBT systems, and internal services using
-Proxmox virtualization.
-</p>
-
-</div>
-
-<div class="card p-8 rounded-xl">
-
-<h3 class="text-2xl font-semibold mb-4">
-Proxmox Virtualization Lab
-</h3>
-
-<p class="text-gray-400">
-Virtual machine environment designed for educational infrastructure,
-supporting development servers, production systems,
-and network experimentation.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ARCHITECTURE -->
-
-<section class="py-24 bg-slate-900 px-6">
-
-<div class="max-w-4xl mx-auto text-center">
-
-<h2 class="text-4xl font-bold mb-10">
-Infrastructure Architecture
-</h2>
-
-<pre class="text-gray-400 text-left inline-block">
-
-Internet
-   │
-Cloudflare
-   │
-Reverse Proxy (Nginx)
-   │
-Proxmox Host
-   │
-├ VM - Moodle LMS
-├ VM - CBT Server
-├ VM - Nextcloud
-└ VM - Web Services
-
-</pre>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="py-24 text-center px-6">
-
-<h2 class="text-4xl font-bold mb-6">
-Contact
-</h2>
-
-<p class="text-gray-400 mb-4">
-Email: bayuriyanto77@guru.smk.belajar.id
-</p>
-
-<p class="text-gray-500">
-© 2026 Bayu Riyanto
-</p>
-
-</section>
+<script src="script.js"></script>
 
 </body>
 </html>
